@@ -1,41 +1,42 @@
 form {
+	background-color: green;
 	display: flex;
-	position: fixed
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
 }
 
-.form-container {
+.formcontainer {
 		background-color: whitesmoke;
     list-style-type: none;
     padding: 0;
 		border-radius: 3px;
 		position: relative;
-}
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+	}
 
-.form-row {
+.formrow {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	padding: .5em;
-	
-}
-.form-row > label {
-	padding: .5em 1em .5em 0;
-	flex: 1;
-	
-}
-.form-row > input {
-	flex: 2;
+		
+	label {
+			padding: .5em 1em .5em 0;
+						
+	}
+		
+	input, button {
+		padding: .5em;			
+	}
 
-}
+	button {
+		background: gray;
+		color: white;
+		border: 0;
+		width: 20px;	
+	}
 
-.form-row > input,
-.form-row > button {
-	padding: .5em;
-	
-}
-.form-row > button {
- background: gray;
- color: white;
- border: 0;
- width: 20px;
- 
 }

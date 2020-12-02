@@ -13,33 +13,34 @@
 	
 	<form>
 
-		<div class="form-container">
+		<div class="formcontainer">
 
-			<div class="form-row">
+			<div class="formrow">
 				<input type="text" id="name" name="name" placeholder="Név" autofocus required>
 			</div>
 
-			<div class="form-row">
-				<input type="email" id="email" name="email" placeholder="Email" required>
+			<div class="formrow">
+				<input type="email" id="myEmail" name="myEmail" placeholder="Email" required>
 			</div>
 
-			<div class="form-row">
-				<input type="datetime-local" id="datetime" name="datetime" placeholder="Foglalás dátuma és időpontja" size="30" required>
+			<div class="formrow">
+				<input type="date" id="myDate" name="myDate" placeholder="Foglalás dátuma" size="30" required>
 			</div>
 
-			<div class="form-row">
+			<div class="formrow">
+				<input type="time" id="myTime" name="myTime" value="check" onclick="checkTime()"placeholder="Foglalás időpontja" size="30" required>
+			</div>
+
+			<div class="formrow">
 				<label for="numberofpeople">Hány személyre szeretne foglalni?</label>		
 				<input type="number" id="numberofpeople" name="numberofpeople" min="1" max="10" required>
 			</div>
 
-			<div class="form-row">
-				<input type="submit">
-			</div>	
+			<div class="formrow">
+				<input type="submit" value="check" onclick="checkDate()">
+			</div>
 
 		</div>
-	
-		
-
 
 	</form>
 	
