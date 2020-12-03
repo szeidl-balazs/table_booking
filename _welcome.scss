@@ -3,17 +3,26 @@ h1 {
   text-align: center;
   font-family: 'Sansita Swashed', cursive;
   color: #fff;
-	font-size: 54px;
+	font-size: Min(Max(1.5625em, calc(1.5625rem + ((1vw - 0.236875em) * 3.2917))), 3.375em);
 	font-weight: 600;
   letter-spacing: 5px;
-  line-height: 1em;
-  padding: 40px;
-  margin: 90px auto;
-  margin-top: -100px;
+  line-height: 1.1em;
   border: 3px dotted #fff;
-  border-radius: 40px;
   border-left-width: 0;
   border-right-width: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.7em;
+  margin-top: -1.6em;
+}
+
+p.intro {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: Min(Max(0.75em, calc(0.75rem + ((1vw - 0.236875em) * 0.681))), 1.125em);
+  line-height: 1.9em;
+  letter-spacing: 0.03em;
+  margin: 0 auto;
 }
 
 .heroDiv {
@@ -23,44 +32,26 @@ h1 {
 }
 
 .introDiv {
-  background-image: url(img/intro-bg.jpg);
+  // background-image: url(img/intro-bg.jpg);
+  background: linear-gradient(180deg, rgba(0,0,0,0),  rgba(0,0,0,0), rgba(0,0,0,0), rgba(255, 255, 255, 0.959)), url(img/intro-bg.jpg); 
   background-size: cover;
   padding: 25%;
-}
-
-p.intro {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  line-height: 1.9em;
-  width: 100%;
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 40px 30px auto;
-  color: #fff;
 }
 
 @media (max-width: 1024px) {
 	.heroDiv {
     background-image: url(img/welcome-pizza-mob.png);
     background-size: cover;
-    padding: 60%;  
+    padding-top: 20em;
+    padding-bottom: 20em;
   }
 }
 
 @media (max-width: 1024px){
   .introDiv {
-    background-image: url(img/intro-bg-mob.jpg);
+    background: linear-gradient(180deg, rgba(0,0,0,0),  rgba(0,0,0,0), rgba(0,0,0,0), rgba(255, 255, 255, 0.959)), url(img/intro-bg-mob.jpg); 
     background-size: cover;
-    padding: 35%;  
-  }
-
-  h1 {
-    position: absolute;
-    font-size: 35px;
-  }
-
-  p.intro {
-  width: 130%;
+    padding-top: 15em;
+    padding-bottom: 15em;
   }
 }
