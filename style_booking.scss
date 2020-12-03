@@ -15,7 +15,8 @@ form {
 	align-items: center;
 	padding: 5px;
 	font-family: 'Open Sans', sans-serif;
-	height: 100vh;
+	height: 100%;
+	padding-bottom: 70px;
 }
 
 .formcontainer {
@@ -44,18 +45,29 @@ form {
 		
 	input, button {
 		padding: .5em;
-		box-shadow: 5px 5px #808080;		
+		box-shadow: 1px 1px #c4c4c4;		
 	}
 
-	button {
-		background: gray;
-		color: white;
-		border: 0;
-		width: 20px;	
+	input[type="submit"] {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: rgb(155, 23, 23);
+	text-transform: uppercase;
+	color: white;
+	
 	}
 
 }
 
 input:hover, button:hover {
 	transform: scale(1.1);
+}
+
+.checkoutRow{
+	white-space:normal;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
 }
