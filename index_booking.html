@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booking a table</title>
+	<link rel="stylesheet" href="style_booking.css">
+	<script src="script_booking.js"></script>
+</head>
+<body>
+
+	
+	
+	<form>
+
+		<div class="formcontainer">
+
+			<div class="formrow">
+				<input type="text" id="name" name="name" placeholder="Név" autofocus required>
+			</div>
+
+			<div class="formrow">
+				<input type="email" id="myEmail" name="myEmail" placeholder="Email" required>
+			</div>
+
+			<div class="formrow">
+				<input type="date" id="myDate" name="myDate" placeholder="Foglalás dátuma" size="30" required>
+			</div>
+
+			<div class="formrow">
+				<input type="time" id="myTime" name="myTime" value="check" onclick="checkTime()"placeholder="Foglalás időpontja" size="30" required>
+			</div>
+
+			<div class="formrow">
+				<label for="numberofpeople">Hány személyre szeretne foglalni?</label>		
+				<input type="number" id="numberofpeople" name="numberofpeople" min="1" max="10" required>
+			</div>
+
+			<div class="formrow">
+				<input type="submit" value="check" onclick="checkDate()">
+			</div>
+
+		</div>
+
+	</form>
+	
+</body>
+</html>

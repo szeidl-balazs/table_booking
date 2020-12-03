@@ -1,0 +1,42 @@
+form {
+	background-color: green;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.formcontainer {
+		background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+		border-radius: 3px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+	}
+
+.formrow {
+	display: flex;
+	justify-content: center;
+	padding: .5em;
+		
+	label {
+			padding: .5em 1em .5em 0;
+						
+	}
+		
+	input, button {
+		padding: .5em;			
+	}
+
+	button {
+		background: gray;
+		color: white;
+		border: 0;
+		width: 20px;	
+	}
+
+}
