@@ -1,3 +1,17 @@
+function validateEmail() {
+      let emailText = document.getElementById("myEmail").value;
+      let emailContent = emailText.includes("@");
+      
+    if (emailContent == false) {
+      alert("Hibás email cím!");
+    }
+
+    else if (emailText.includes(".") == false) {
+      alert("Hibás email cím!");
+    }  
+}
+
+
 function test() {
 
   var element = document.getElementById("myTime").value;
@@ -31,11 +45,14 @@ function test() {
   
   if (inputDate.getTime() <= -86400000 + today.getTime()){
 		alert("A megadott dátum nem lehet régebbi a mai dátumnál!");
-	} else if ((Math.abs(totalTime)) < 1 && inputDate < today ) {
-    alert("Legalább 1 órával korábban foglaljon asztalt!");			
-	}
-	else {
-		document.getElementById("checkoutText").innerHTML = "Köszönjük az asztal foglalását, szeretettel várjuk a lefoglalt időpontban.";
+    } 
+    
+    else if ((Math.abs(totalTime)) < 1 && inputDate < today ) {
+      alert("Legalább 1 órával korábban foglaljon asztalt!");			
+	  }
+    
+    else {
+		  document.getElementById("checkoutText").innerHTML = "Köszönjük az asztal foglalását, szeretettel várjuk a lefoglalt időpontban.";
 		
 			let name = document.getElementById("myName").value;
 			let email = document.getElementById("myEmail").value;
@@ -50,5 +67,6 @@ function test() {
 			document.getElementById("checkoutGuest").innerHTML = "Vendégek száma: " + guest;
 		
 			console.log(name + "\n", email + "\n", date + "\n", time + "\n", guest)
-	}
-	}}
+	  }
+  }
+}
