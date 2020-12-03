@@ -16,30 +16,36 @@
 		<div class="formcontainer">
 
 			<div class="formrow">
-				<input type="text" id="name" name="name" placeholder="Név" autofocus required>
+				<input type="text" id="name" name="name" placeholder="Név" size="30px" autofocus required>
 			</div>
 
 			<div class="formrow">
-				<input type="email" id="myEmail" name="myEmail" placeholder="Email" required>
+				<input type="email" id="myEmail" name="myEmail" placeholder="Email"  size="30px" required>
 			</div>
 
-			<label>Asztalfoglalás dátuma:</label><br>
+			<div class="formrow">
+			<label>Asztalfoglalás dátuma:</label>
+			</div>
 			<div class="formrow">				
 				<input type="date" id="myDate" name="myDate" placeholder="Foglalás dátuma" size="30" required>
 			</div>
-
-			<label>Asztalfoglalás időpontja:</label><br>
+			
+			<div class="formrow">
+			<label>Asztalfoglalás időpontja:</label>
+			</div>
 			<div class="formrow">				
-				<input type="time" id="myTime" name="myTime" value="check" placeholder="Foglalás időpontja" size="30" required>
+				<input type="time" id="myTime" name="myTime" placeholder="Foglalás időpontja" size="30" required>
 			</div>
 
+			<div class="formrow">
 			<label for="numberofpeople">Hány személyre szeretne foglalni?</label>		
+			</div>
 			<div class="formrow">				
 				<input type="number" id="numberofpeople" name="numberofpeople" min="1" max="10" required>
 			</div>
 
 			<div class="formrow">
-				<input type="submit" value="check" onclick="checkTime()">
+				<input type="submit" value="küldés" onclick="checkDate(), orderSummary()">
 			</div>
 
 		</div>
