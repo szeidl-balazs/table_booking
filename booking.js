@@ -3,7 +3,7 @@ function test() {
   var element = document.getElementById("myTime").value;
   
   if (element == "") {
-  alert("Please Enter Time");
+  alert("Kérjük adja meg a foglalás időpontját!");
     return false;  
   }
   else {
@@ -29,7 +29,7 @@ function test() {
   var totalTime = currentTime - inputTime;
   console.log(totalTime);
   
-  if ((Math.abs(totalTime)) < 1 || inputDate < today ) {
+  if ((Math.abs(totalTime)) < 1 && inputDate < today ) {
     alert("Legalább 1 órával korábban foglaljon asztalt!");
 	} else {
 		var today = new Date();	
