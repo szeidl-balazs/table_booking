@@ -42,10 +42,13 @@ form {
 
 	button {
 		background: gray;
-		
 		color: white;
 		border: 0;
 		width: 20px;	
 	}
 
+}
+
+input:hover, button:hover {
+	transform: scale(1.1);
 }
