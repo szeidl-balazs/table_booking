@@ -14,38 +14,52 @@
 	<form>
 
 		<div class="formcontainer">
-
-			<div class="formrow">
-				<input type="text" id="name" name="name" placeholder="Név" size="30px" autofocus required>
+			<div class="menuHead">
+				<h1>Pizza <br>
+					Dominium</h1>
+					<h2>Asztalfoglalás</h2>
 			</div>
 
 			<div class="formrow">
-				<input type="email" id="myEmail" name="myEmail" placeholder="Email"  size="30px" required>
+				<input type="text" id="myName" name="myName" value="" placeholder="Név" size="30px" autofocus required>
+			</div>
+
+			<div class="formrow">
+				<input type="email" id="myEmail" name="myEmail" value="" placeholder="Email"  size="30px" required>
 			</div>
 
 			<div class="formrow">
 			<label>Asztalfoglalás dátuma:</label>
 			</div>
 			<div class="formrow">				
-				<input type="date" id="myDate" name="myDate" placeholder="Foglalás dátuma" size="30" required>
+				<input type="date" id="myDate" name="myDate" value="" placeholder="Foglalás dátuma" size="30" required>
 			</div>
 			
 			<div class="formrow">
 			<label>Asztalfoglalás időpontja:</label>
 			</div>
 			<div class="formrow">				
-				<input type="time" id="myTime" name="myTime" placeholder="Foglalás időpontja" size="30" required>
+				<input type="time" id="myTime" name="myTime" value="" placeholder="Foglalás időpontja" size="30" required>
 			</div>
 
 			<div class="formrow">
 			<label for="numberofpeople">Hány személyre szeretne foglalni?</label>		
 			</div>
 			<div class="formrow">				
-				<input type="number" id="numberofpeople" name="numberofpeople" min="1" max="10" required>
+				<input type="number" id="numberOfPeople" name="numberOfPeople" value="" min="1" max="10" required>
 			</div>
 
 			<div class="formrow">
 				<input type="submit" value="küldés" onclick="checkDate(), orderSummary()">
+			</div>
+
+			<div class="formrow">
+				<p id="checkoutText"></p>
+				<p id="checkoutName"></p>
+				<p id="checkoutEmail"></p>
+				<p id="checkoutDate"></p>
+				<p id="checkoutTime"></p>
+				<p id="checkoutGuest"></p>
 			</div>
 
 		</div>

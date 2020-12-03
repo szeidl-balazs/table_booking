@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sansita+Swashed:wght@400;700&display=swap');
 
+.menuHead{
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	font-family: 'Sansita Swashed', cursive;
+}
+
 form {
 	background-image: url(/img/bg_section.jpg);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 20px;
+	padding: 5px;
 	font-family: 'Open Sans', sans-serif;
 	height: 100vh;
 }
