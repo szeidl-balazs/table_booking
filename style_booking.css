@@ -45,6 +45,7 @@ form {
 }
 
 .formrow label {
+  margin: 5px;
   padding: .5em 1em .5em 0;
 }
 
