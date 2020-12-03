@@ -15,7 +15,6 @@ function test() {
   if(h == '0') {h = 24}
   
   var currentTime = h+"."+m;
-  console.log(currentTime);
  
   // get input time
   var time = element.split(":");
@@ -24,18 +23,16 @@ function test() {
   var min = time[1];
   
   var inputTime = hour+"."+min;
-  console.log(inputTime);
   
   var totalTime = currentTime - inputTime;
-  console.log(totalTime);
+	
+	var today = new Date();	
+	var inputDate = new Date(document.getElementById("myDate").value);
   
-  if ((Math.abs(totalTime)) < 1 && inputDate < today ) {
-    alert("Legalább 1 órával korábban foglaljon asztalt!");
-	} else {
-		var today = new Date();	
-		var inputDate = new Date(document.getElementById("myDate").value);
-		if (inputDate.getTime() <= -86400000 + today.getTime() && inputTime < currentTime ) {
-			alert("A megadott dátum nem lehet régebbi a mai dátumnál!");	
+  if (inputDate.getTime() <= -86400000 + today.getTime()){
+		alert("A megadott dátum nem lehet régebbi a mai dátumnál!");
+	} else if ((Math.abs(totalTime)) < 1 && inputDate < today ) {
+    alert("Legalább 1 órával korábban foglaljon asztalt!");			
 	}
 	else {
 		document.getElementById("checkoutText").innerHTML = "Köszönjük az asztal foglalását, szeretettel várjuk a lefoglalt időpontban.";
@@ -54,4 +51,4 @@ function test() {
 		
 			console.log(name + "\n", email + "\n", date + "\n", time + "\n", guest)
 	}
-	}}}
+	}}
