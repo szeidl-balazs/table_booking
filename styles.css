@@ -104,9 +104,8 @@ body {
   }
 }
 
-<<<<<<< HEAD
 .bookingDiv {
-  background-color: red;
+  background-color: #9b1717;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
@@ -130,10 +129,16 @@ body {
 }
 
 .bookingDiv button:hover {
-  color: red;
+  color: #9b1717;
   background-color: white;
   cursor: pointer;
-=======
+}
+
+.bookingDiv img {
+  width: 100px;
+  padding-bottom: 50px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -201,6 +206,5 @@ p.intro {
   p.intro {
     width: 130%;
   }
->>>>>>> 3db671761ba4c356fcd1ef3cacf3a9e7cba6d26e
 }
 /*# sourceMappingURL=styles.css.map */

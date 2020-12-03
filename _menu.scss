@@ -84,7 +84,7 @@ body{
 }
 
 .bookingDiv{
-	background-color: red;
+	background-color: rgb(155, 23, 23);
 	padding-top: 100px;
 	padding-bottom: 100px;
 	text-align: center;
@@ -108,7 +108,12 @@ body{
 }
 
 .bookingDiv button:hover{
-	color: red;
+	color: rgb(155, 23, 23);
 	background-color: white;
 	cursor: pointer;
+}
+
+.bookingDiv img{
+	width: 100px;
+	padding-bottom: 50px;
 }
